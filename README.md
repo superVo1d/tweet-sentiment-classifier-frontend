@@ -7,4 +7,4 @@ Features
 - 🧠 NLP model backend for real-time sentiment analysis
 - 🚀 Fast & lightweight frontend built with Vite
   
-Try it live 👉 [tweet-sentiment-classifier.y3k.solutions](tweet-sentiment-classifier.y3k.solutions)
+Try it live 👉 [tweet-sentiment-classifier.y3k.solutions](https://tweet-sentiment-classifier.y3k.solutions)
