@@ -1,0 +1,43 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Poppins:wght@400;500&display=swap";
+ 
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+:root {
+  --gradient: conic-gradient(
+    from 90deg at 50% 50%,
+    rgb(251 55 60),
+    rgb(252 114 28 / 100%),
+    rgb(255 220 0 / 100%),
+    rgb(27 206 255 / 100%),
+    rgb(42 107 255 / 100%),
+    rgb(217 41 255 / 100%),
+    rgb(255 10 92 / 100%)
+  );
+}
+ 
+body {
+  align-items: center;
+  background-color: #0f0f0f;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+ 
+h1 {
+  color: rgb(71 71 71);
+  font-size: 65px;
+  font-weight: 600;
+  text-align: center;
+}
+ 
+p {
+  color: rgb(174 174 174);
+  font-size: 20px;
+  font-weight: 600;
+}

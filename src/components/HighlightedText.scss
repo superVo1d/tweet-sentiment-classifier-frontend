@@ -1,0 +1,53 @@
+.hightlight-text {
+    &_positive {
+        --color: rgb(137 243 54 / 100%);
+    }
+
+    &_negative {
+        --color: rgb(255 40 0 / 100%);
+    }
+
+    &_neutral {
+        --color: transparent;
+
+        color: #fff;
+    }
+
+    .highlight {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            background: var(--color);
+            border-radius: 8px;
+            content: '';
+            display: block;
+            height: 100%;
+            left: -2px;
+            opacity: var(--weight);
+            padding: 2px;
+            position: absolute;
+            top: -2px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        sup {
+            font-size: 0.4em;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: -1em;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                sup {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
