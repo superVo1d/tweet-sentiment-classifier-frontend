@@ -5,7 +5,6 @@ import fragmentShader from '../assets/fragmentShader.glsl';
 import { Canvas, useFrame } from '@react-three/fiber';
 
 import { MathUtils, Mesh, ShaderMaterial, Vector2, Vector3 } from 'three';
-import { Environment } from '@react-three/drei';
 
 const Blob = ({ sentiment, isLoading = false }: { sentiment?: string, isLoading?: boolean; }) => {
   const mesh = useRef<Mesh>(null);
@@ -76,7 +75,6 @@ const Blob = ({ sentiment, isLoading = false }: { sentiment?: string, isLoading?
 
 const BlobScene = ({ sentiment, isLoading }: { sentiment?: string; isLoading?: boolean; }) => (
   <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
-    <Environment preset="night" background={false} />
     <pointLight position={[10, 10, 10]} />
     <Blob sentiment={sentiment} isLoading={isLoading} />
   </Canvas>

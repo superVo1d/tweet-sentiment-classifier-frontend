@@ -24,20 +24,18 @@ body {
   align-items: center;
   background-color: #0f0f0f;
   display: flex;
-  height: 100vh;
+  height: var(--unit-100vh);
   justify-content: center;
   margin: 0;
 }
  
 h1 {
-  color: rgb(71 71 71);
   font-size: 65px;
   font-weight: 600;
   text-align: center;
 }
  
 p {
-  color: rgb(174 174 174);
   font-size: 20px;
   font-weight: 600;
 }
